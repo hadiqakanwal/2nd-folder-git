@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .footer{
+           position: relative;
+           bottom:50px;
+           width: 80%;
+           display: flex;
+           margin-left: 25%;
+        
+       }
+        #firstbar{
+            background-color: #333742;
+            width: 100%;
+            height: 70px;
+            color: white;
+        }
+        #secondbar{
+            background-color:  whitesmoke;
+            color: black;
+            padding: 5px;
+            width: 80%;
+            margin: auto;
+            position: absolute;
+            z-index: 5;
+           left: 0;
+           right: 0;
+           top: 52px;
+        }
+        .parent{
+            list-style-type: none;
+            display: flex;
+            float: left;
+        }
+        li{
+            margin-left: 35px;
+        } 
+        .searchicon{
+            position: absolute;
+            right: 14px;
+            top: 13px;
+        }
+        .orange{
+            color: #e17318;
+    
+        }
+        .logo{
+            padding-left: 165px;
+            padding-top: 6px;
+        }
+        .info{
+            /* margin-left: 55%; */
+            float: right;
+            display: flex;
+            margin-top: -25px;
+            margin-right: 10%;
+        }
+        #image{
+            width: 100%;
+            height: 600px;
+        }
+        #textcenter{
+            position: relative;
+        }
+        #imagesection{
+            position: absolute;
+            margin-left: 25%;
+            top: 0;
+            color: white;
+            }
+
+        .imgtext{
+            font-size: 4em;
+            margin-top: 20%;
+        }
+        .imgpara{
+            font-size: 20px;
+            margin: inherit;
+            margin-top: -50px;
+        }
+
+        .mt-10{
+            margin-top:10% !important;
+        }
+        #imgbutton{
+     background: #e35f09;
+    border: 1px solid #e35f09;
+    width: 22%;
+    height: 50px;
+    color: white;
+    margin: inherit;
+    /* margin-top: 10%; */
+        }
+        input{
+            padding: 15px;
+        }
+        .search{
+            float: right;
+            position: relative;
+        }
+        body{
+            margin: 0;
+        }
+        .info img{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="firstbar">
+            <div class="logo"><img src="Capturee.PNG" alt=""> POWER</div>
+            <div class="info">
+            <div>
+                <img src="Capturedot.PNG" alt=""> Discover St. New York NY 10012.USA
+            </div>
+            <div>
+                <img src="CaptureA.PNG" alt=""> Mon-Sat-9:00-18:00
+            </div>
+            <div>
+                <img src="Call.PNG" alt=""> +251-254-3256
+            </div>
+            </div>
+        </nav>
+        <nav id="secondbar">
+            <ol class="parent">
+                <li class="orange">HOME</li>
+                <li>ABOUT</li>
+                <li>SERVICES</li>
+                <li>PAGES</li>
+                <li>NEWS</li>
+                <li>CONTACT US</li>
+            </ol>
+            <input class="search" placeholder="search here" type="search here" name="" id="">
+            <img class="searchicon" src="search.PNG" alt="">
+        </nav>
+    </header>
+    <section id="textcenter">
+        <img id="image" src="IMG-20210818-WA0109.jpg" alt="">
+        <div id="imagesection">
+            <h1 class="imgtext"> Fast Electrical Services Provider</h1>
+            <p class="imgpara"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button id="imgbutton" class="mt-10">CONTACT NOW</button>
+        </div>
+        </section>
+            <h2 class="orange"> Request</h2>
+            <h2> Services Now</h2>
+        <div class="footer" >
+        <input  placeholder="your name" type="your name">
+        <input  placeholder="enter email" type="enter email" name="" >
+        <input  placeholder="phone number" type="phone number" name="" >
+        <button id="imgbutton">Get SERVICES</button>
+        </div>
+</body>
+</html>
