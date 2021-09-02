@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #443b3c;
+            color: white;
+            position: relative;
+        }
+
+        .parent {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            justify-content: center;
+        }
+
+        li {
+            margin-left: 5%;
+            position: relative;
+        }
+
+        li:hover::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            bottom: 0;
+            background-color: red;
+            height: 5px;
+            left: 0;
+        }
+
+        .img {
+            width: 50px;
+            height: 30px;
+        }
+        .firstimg{
+            position: absolute;
+            left: 0;
+        }
+
+        .button {
+            position: absolute;
+            top: 20px;
+            margin-left: 83%;
+        }
+
+        .logo {
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+
+        .image {
+            width: 100%;
+            height: 400px;
+        }
+
+        #imagetext {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            margin-left: 25%;
+            margin-top: 5%;
+        }
+
+        h1 {
+            font-size: 5em;
+            color: brown;
+        }
+
+        fieldset:nth-child(1) legend {
+            color: green;
+            text-align: center;
+        }
+
+        fieldset:nth-child(2) legend {
+            color: blue;
+            text-align: center;
+        }
+
+        fieldset:nth-child(3) legend {
+            color: red;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 34px;
+        }
+
+        .greenbutton {
+            background: green;
+            color: white;
+            border: 1px solid green;
+            padding: 8px 15px;
+        }
+
+        .bluebutton {
+            background: blue;
+            color: white;
+            border: 1px solid blue;
+            padding: 8px 15px;
+        }
+
+        .redbutton {
+            background: red;
+            color: white;
+            border: 1px solid red;
+            padding: 8px 15px;
+        }
+        fieldset {
+            margin-top: 40px;
+            width: 250px;
+            height: 170px;
+            text-align: center;
+        }
+        .boxes{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="firstimg">
+            <img class="logo" src="greenicon.PNG" alt="">
+            <span>Progress</span>
+            <i>'Telerik'</i>
+            </div>
+            <ol class="parent">
+                <li>Products</li>
+                <li>Enterpage</li>
+                <li>Free trails</li>
+                <li>Pricing</li>
+                <li>Supporting&Learning</li>
+                <li>Abouts</li>
+                <li class="img"><img src="search.PNG" alt=""></li>
+            </ol>
+            <div class="button">
+                <button>YOUR ACCOUNT</button>
+                <button>TELE PLATFORM</button>
+            </div>
+        </nav>
+    </header>
+    <section id="imagetext">
+        <img class="image" src="./images/programmer.png" alt="">
+        <div class="text">
+            <h1> DEVELOP EXPERIENCE</h1>
+            <h3>UI Frameworks and app development tools that 2.1 developer love</h3>
+        </div>
+    </section>
+    <div class="boxes">
+        <fieldset>
+            <legend>.NET</legend>
+            <div>
+                <h4>DEVCRAFT</h4>
+                <p>.NET UI controls reporting and developing tools</p>
+                <button class="greenbutton">Learn more</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Nativemobile</legend>
+            <div>
+                <h4>NATIVESCRIPT</h4>
+                <p>.NET UI controls reporting and developing tools</p>
+                <button class="bluebutton">Learn more</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>HTMLS</legend>
+            <div>
+                <h4>KENDO UI</h4>
+                <p>.NET UI controls reporting and developing tools</p>
+                <button class="redbutton">Learn more</button>
+            </div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
